@@ -13,37 +13,38 @@
         <section class="grid grid-cols-3 gap-4 w-3/4 mx-auto mt-10 h-40  text-slate-200">
             <div class="bg-violet-500 p-5 rounded-lg flex flex-col justify-center">
                 <h3 class="text-2xl font-bold">Total Deposit</h3>
-                <h1 class="text-5xl font-bold">$00</h1>
+                <h1 class="text-5xl font-bold">$<span id="deposit-amount">00</span></h1>
             </div>
             <div class="bg-violet-500 p-5 rounded-lg flex flex-col justify-center">
                 <h3 class="text-2xl font-bold">Total Withdraw</h3>
-                <h1 class="text-5xl font-bold">$00</h1>
+                <h1 class="text-5xl font-bold">$<span>00</span></h1>
             </div>
             <div class="bg-violet-500 p-5 rounded-lg flex flex-col justify-center">
                 <h3 class="text-2xl font-bold">Current Balance</h3>
-                <h1 class="text-5xl font-bold">$1240</h1>
+                <h1 class="text-5xl font-bold">$<span id="current-balance">1240</span></h1>
             </div>
         </section>
     </section>
     <!-- transaction section -->
     <section>
-        <section class="grid grid-cols-2 gap-4 w-3/4 mx-auto mt-10 h-40  text-slate-200">
+        <section class="grid grid-cols-2 gap-4 w-3/4 mx-auto mt-10 h-40">
             <div class="bg-purple-300 p-5 rounded-lg">
-                <h3 class="text-2xl font-bold">Deposit</h3>
-                <input type="text" name="" id="user-email" class="w-3/4 block my-2.5 px-2 py-1 rounded"
+                <h3 class="text-2xl font-bold text-slate-200">Deposit</h3>
+                <input type="text" name="" id="deposit-field" class="w-3/4 block my-2.5 px-2 py-1 rounded"
                     placeholder="Please enter the deposit amount.">
-                <button id="submit-btn"
+                <button id="deposit-btn"
                     class="bg-fuchsia-400 hover:bg-sky-400 px-3 py-2 rounded-lg text-white">Confirm</button>
             </div>
             <div class="bg-purple-300 p-5 rounded-lg">
-                <h3 class="text-2xl font-bold">Withdraw</h3>
-                <input type="text" name="" id="user-email" class="w-3/4 block my-2.5 px-2 py-1 rounded"
+                <h3 class="text-2xl font-bold text-slate-200">Withdraw</h3>
+                <input type="text" name="" id="Withdraw-field" class="w-3/4 block my-2.5 px-2 py-1 rounded"
                     placeholder="Please enter the Withdraw amount.">
-                <button id="submit-btn"
+                <button id="withdraw-btn"
                     class="bg-fuchsia-400 hover:bg-sky-400 px-3 py-2 rounded-lg text-white">Confirm</button>
             </div>
         </section>
     </section>
+    <script src="js/home-page.js"></script>
 </body>
 
 </html>
