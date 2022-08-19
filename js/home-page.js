@@ -33,6 +33,6 @@ withdrawBtn.addEventListener("click", function () {
     let withdrawAmountFinal = parseFloat(withdrawAmount);
     withdrawAmountFinal = withdrawAmountFinal + withdrawFieldFinal;
     document.getElementById("withdraw-amount").innerText = withdrawAmountFinal;
-    currentBalanceFinal = currentBalanceFinal - withdrawAmountFinal;
+    currentBalanceFinal = currentBalanceFinal - withdrawFieldFinal;
     document.getElementById("current-balance").innerText = currentBalanceFinal;
 });
